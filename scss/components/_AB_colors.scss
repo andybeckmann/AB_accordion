@@ -1,0 +1,14 @@
+/**
+ * AB_colors
+ * version: 1.0.0
+ */
+
+$purple: 	#b10dc9; 	$dark-purple: 	scale-color($purple, $lightness: -5%);
+$aqua:		#72d5fc;	$dark-aqua:		scale-color($aqua, $lightness: -5%);
+$blue: 		#0074d9; 	$dark-blue: 	scale-color($blue, $lightness: -5%);
+$teal:		#1abc9c;	$dark-teal:		scale-color($teal, $lightness: -5%);
+$green: 	#2ecc40; 	$dark-green: 	scale-color($green, $lightness: -5%);
+$red: 		#d9534f; 	$dark-red: 		scale-color($red, $lightness: -5%);
+$orange:	#ff851b; 	$dark-orange:	scale-color($orange, $lightness: -5%);
+$maroon:	#85114b;	$dark-maroon:	scale-color($maroon, $lightness: -5%);
+$fuchsia:	#f012be;	$dark-fuchsia:	scale-color($fuchsia, $lightness: -5%);

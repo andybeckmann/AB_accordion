@@ -1,0 +1,58 @@
+// Global styles
+@use 'global';
+
+// AB_colors
+@use 'components/AB_colors' as colors;
+
+// AB_accordion
+@use 'components/AB_accordion';
+
+// Demo styles
+body {
+	background: #eee;
+}
+
+main {
+	.group {
+
+		@media (min-width: 769px) {
+			display: flex;
+		}
+
+		.blue {
+			margin-bottom: 25px; 
+			
+			@media (min-width: 769px) {
+				margin-right: 25px;
+			}
+		}
+
+		.purple {
+			margin-bottom: 25px;
+		}
+	}
+}
+
+.blue ul li .item .header {
+	background: linear-gradient(170deg, colors.$blue, scale-color(colors.$dark-blue, $lightness: -15%));
+
+	.toggle {
+		background: linear-gradient(170deg, scale-color(colors.$dark-blue, $lightness: -15%), scale-color(colors.$dark-blue, $lightness: -25%));;
+	}
+}
+
+.purple ul li .item .header {
+	background: linear-gradient(170deg, colors.$purple, scale-color(colors.$dark-purple, $lightness: -15%));
+
+	.toggle {
+		background: linear-gradient(170deg, scale-color(colors.$dark-purple, $lightness: -15%), scale-color(colors.$dark-purple, $lightness: -25%));
+	}
+}
+
+.orange ul li .item .header {
+	background: linear-gradient(170deg, colors.$orange, scale-color(colors.$dark-orange, $lightness: -15%));
+
+	.toggle {
+		background: linear-gradient(170deg, scale-color(colors.$dark-orange, $lightness: -15%), scale-color(colors.$dark-orange, $lightness: -25%));
+	}
+}
