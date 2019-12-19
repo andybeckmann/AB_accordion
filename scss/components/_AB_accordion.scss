@@ -5,6 +5,8 @@
 
 .accordion {
 
+	box-shadow: 0 0 15px #ccc;
+
 	ul {
 		margin: 0;
 		padding: 0;
@@ -23,7 +25,7 @@
 			}
 
 			.item {
-				box-shadow: 0 0 15px #ccc;
+				
 
 				.header {
 					padding: 15px;

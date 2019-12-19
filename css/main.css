@@ -21,6 +21,9 @@ body {
  * AB_accordion
  * version: 1.0.0
  */
+.accordion {
+  box-shadow: 0 0 15px #ccc;
+}
 .accordion ul {
   margin: 0;
   padding: 0;
@@ -35,9 +38,6 @@ body {
 .accordion ul li:last-child {
   border-radius: 0 0 5px 5px;
   overflow: hidden;
-}
-.accordion ul li .item {
-  box-shadow: 0 0 15px #ccc;
 }
 .accordion ul li .item .header {
   padding: 15px;
@@ -80,10 +80,6 @@ body {
 }
 .accordion ul li .current-item .body {
   display: block;
-}
-
-body {
-  background: #eee;
 }
 
 @media (min-width: 769px) {
