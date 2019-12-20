@@ -22,12 +22,12 @@ body {
  * version: 1.0.0
  */
 .accordion {
-  box-shadow: 0 0 15px #ccc;
   width: 100%;
 }
 .accordion ul {
   margin: 0;
   padding: 0;
+  box-shadow: 0 0 15px #ccc;
 }
 .accordion ul li {
   list-style-type: none;
