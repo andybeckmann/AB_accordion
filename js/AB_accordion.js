@@ -18,23 +18,43 @@ function accordion(listClassName) {
 		// Add event listener to each header to trigger toggleDisplay
 		headers[i].addEventListener('click', toggleDisplay);
 
-		// Toggle display of child body when clicking child
-		function toggleDisplay() {
+		// Function used to clear all open sections
+		function clearAll(selector) {
 
 			// Set variable for currently selected item
-			var currentlyDisplayed = document.querySelectorAll('.current-item');
+			var currentlyDisplayed = document.querySelectorAll('.' + selector + ' .current-item');
 
 			// For each currently selected item
 			for (var e=0; e<currentlyDisplayed.length; e++) {
 
 				// Remove the class current-item
 				currentlyDisplayed[e].classList.remove('current-item');
-			}
 
-			// Add class current-item to toggle display of body
-			this.closest('.item').classList.add('current-item');
+			}
 		}
 
-	}
+		// Function used on click to toggle display of child body when clicking child
+		function toggleDisplay() {
 
+			// Detect if the section being clicked already appears open
+			if (this.parentNode.classList.contains('current-item')) {
+
+				var parentClassName = this.parentNode.parentNode.parentNode.parentNode.classList[1];
+
+				// Clear all open sections
+				clearAll(parentClassName);
+
+			} else {
+
+				var parentClassName = this.parentNode.parentNode.parentNode.parentNode.classList[1];
+
+				// Clear all open sections
+				clearAll(parentClassName);
+
+				// Add class current-item to toggle display of body
+				this.closest('.item').classList.add('current-item');
+
+			}
+		}
+	}
 }
