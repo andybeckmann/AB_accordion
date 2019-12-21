@@ -69,9 +69,14 @@ body {
 }
 .accordion ul li .item .body {
   background: #fff;
-  padding: 15px;
   font-size: 18px;
-  display: none;
+  height: 100%;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s ease max-height;
+}
+.accordion ul li .item .body .body-text {
+  padding: 15px;
 }
 .accordion ul li .current-item .header .toggle {
   padding: 11px 16px 15px 18px;
@@ -80,7 +85,7 @@ body {
   transform: rotate(45deg);
 }
 .accordion ul li .current-item .body {
-  display: block;
+  max-height: 999px;
 }
 
 @media (min-width: 769px) {

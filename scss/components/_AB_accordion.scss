@@ -61,9 +61,15 @@
 
 				.body {
 					background: #fff;
-					padding: 15px;
 					font-size: 18px;
-					display: none;
+					height: 100%;
+					max-height: 0px;
+    				overflow: hidden;
+    				transition: 1s ease max-height;
+
+    				.body-text {
+						padding: 15px;
+					}
 				}
 			}
 
@@ -81,8 +87,10 @@
 
 				}
 
-				.body {
-					display: block
+				.body{
+
+					max-height: 999px;
+
 				}
 			}
 		}
