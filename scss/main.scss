@@ -15,7 +15,7 @@ main {
 			display: flex;
 		}
 
-		.blue {
+		#blue {
 			margin-bottom: 25px; 
 			
 			@media (min-width: 769px) {
@@ -23,13 +23,13 @@ main {
 			}
 		}
 
-		.purple {
+		#purple {
 			margin-bottom: 25px;
 		}
 	}
 }
 
-.blue ul li .item .header {
+#blue ul li .item .header {
 	background: linear-gradient(170deg, colors.$blue, scale-color(colors.$dark-blue, $lightness: -15%));
 
 	.toggle {
@@ -37,7 +37,7 @@ main {
 	}
 }
 
-.purple ul li .item .header {
+#purple ul li .item .header {
 	background: linear-gradient(170deg, colors.$purple, scale-color(colors.$dark-purple, $lightness: -15%));
 
 	.toggle {
@@ -45,7 +45,7 @@ main {
 	}
 }
 
-.orange ul li .item .header {
+#orange ul li .item .header {
 	background: linear-gradient(170deg, colors.$orange, scale-color(colors.$dark-orange, $lightness: -15%));
 
 	.toggle {

@@ -4,13 +4,13 @@
  *
  * accordion() adds accordion functionality to a list
  *
- * @param {string} listClassName - HTML list class name
+ * @param {string} accordionId - HTML list class name
  */
 
-function accordion(listClassName) {
+function accordion(accordionId) {
 
 	// Find items within list
-	var headers = document.querySelectorAll('.' + listClassName + ' .header');
+	var headers = document.querySelectorAll('#' + accordionId + ' .header');
 
 	// For each item
 	for (var i=0; i<headers.length; i++) {
@@ -22,10 +22,10 @@ function accordion(listClassName) {
 		function clearAll(selector) {
 
 			// Set variable for currently selected item
-			var currentlyDisplayed = document.querySelectorAll('.' + selector + ' .current-item');
+			var currentlyDisplayed = document.querySelectorAll('#' + selector + ' .current-item');
 
 			// Set variable for the body text section inside of our current-item
-			var currentSection = document.querySelectorAll('.' + selector + ' .current-item .body')[0];
+			var currentSection = document.querySelectorAll('#' + selector + ' .current-item .body')[0];
 
 			// For each currently selected item
 			for (var e=0; e<currentlyDisplayed.length; e++) {
@@ -42,7 +42,7 @@ function accordion(listClassName) {
 		// Function used on click to toggle display of child body when clicking child
 		function toggleDisplay() {
 
-			var parentClassName = this.parentNode.parentNode.parentNode.parentNode.classList[1];
+			var parentClassName = this.parentNode.parentNode.parentNode.parentNode.id;
 
 			// Detect if the section being clicked already appears open
 			if (this.parentNode.classList.contains('current-item')) {
@@ -60,10 +60,10 @@ function accordion(listClassName) {
 				this.closest('.item').classList.add('current-item');
 
 				// Set variable for sectionHeight using offsetHeight
-				var sectionHeight = document.querySelectorAll('.' + parentClassName + ' .current-item .body-text')[0].offsetHeight;
+				var sectionHeight = document.querySelectorAll('#' + parentClassName + ' .current-item .body-text')[0].offsetHeight;
 
 				// Modify the height of the section within the current-item
-				document.querySelectorAll('.' + parentClassName + ' .current-item .body')[0].setAttribute('style', 'height: ' + sectionHeight + 'px');
+				document.querySelectorAll('#' + parentClassName + ' .current-item .body')[0].setAttribute('style', 'height: ' + sectionHeight + 'px');
 
 			}
 		}

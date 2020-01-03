@@ -89,35 +89,35 @@ body {
     display: flex;
   }
 }
-main .group .blue {
+main .group #blue {
   margin-bottom: 25px;
 }
 @media (min-width: 769px) {
-  main .group .blue {
+  main .group #blue {
     margin-right: 25px;
   }
 }
-main .group .purple {
+main .group #purple {
   margin-bottom: 25px;
 }
 
-.blue ul li .item .header {
+#blue ul li .item .header {
   background: linear-gradient(170deg, #0074d9, #005eaf);
 }
-.blue ul li .item .header .toggle {
+#blue ul li .item .header .toggle {
   background: linear-gradient(170deg, #005eaf, #00539b);
 }
 
-.purple ul li .item .header {
+#purple ul li .item .header {
   background: linear-gradient(170deg, #b10dc9, #8f0aa2);
 }
-.purple ul li .item .header .toggle {
+#purple ul li .item .header .toggle {
   background: linear-gradient(170deg, #8f0aa2, #7e098f);
 }
 
-.orange ul li .item .header {
+#orange ul li .item .header {
   background: linear-gradient(170deg, #ff851b, #e46a00);
 }
-.orange ul li .item .header .toggle {
+#orange ul li .item .header .toggle {
   background: linear-gradient(170deg, #e46a00, #c95d00);
 }
