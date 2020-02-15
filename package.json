@@ -1,14 +1,4 @@
 {
-  "name": "AB_accordion",
-  "version": "1.0.0",
-  "description": "Accordion component styles and JavaScript",
-  "author": {
-    "name": "Andy Beckmann",
-    "email": "contact@andybeckmann.com",
-    "url": "https://www.andybeckmann.com"
-  },
-  "repository": "github:andybeckmann/AB_accordion",
-  "license": "MIT",
   "private": true,
   "devDependencies": {
     "grunt": "*",
