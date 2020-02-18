@@ -5,6 +5,9 @@
     "grunt-cli": "*",
     "grunt-dart-sass": "*",
     "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
     "load-grunt-tasks": "*"
   }
