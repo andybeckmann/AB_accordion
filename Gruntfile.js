@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         concat: {   
             dist: {
                 src: [
-                    'js/AB_xfader.js'
+                    'js/AB_accordion.js'
                 ],
                 dest: 'js/build/global.js',
             }
