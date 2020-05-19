@@ -14,12 +14,8 @@ body {
 }
 
 /**
- * AB_colors
- * version: 1.0.0
- */
-/**
  * AB_accordion
- * version: 1.0.0
+ * version: 2.0.0
  */
 .accordion {
   width: 100%;
@@ -33,11 +29,9 @@ body {
   list-style-type: none;
 }
 .accordion ul li:first-child {
-  border-radius: 5px 5px 0 0;
   overflow: hidden;
 }
 .accordion ul li:last-child {
-  border-radius: 0 0 5px 5px;
   overflow: hidden;
 }
 .accordion ul li .item .header {
@@ -89,35 +83,35 @@ body {
     display: flex;
   }
 }
-main .group #blue {
+main .group #accordion_one {
   margin-bottom: 25px;
 }
 @media (min-width: 769px) {
-  main .group #blue {
+  main .group #accordion_one {
     margin-right: 25px;
   }
 }
-main .group #purple {
+main .group #accordion_two {
   margin-bottom: 25px;
 }
 
-#blue ul li .item .header {
-  background: linear-gradient(170deg, #0074d9, #005eaf);
+#accordion_one ul li .item .header {
+  background: #222;
 }
-#blue ul li .item .header .toggle {
-  background: linear-gradient(170deg, #005eaf, #00539b);
-}
-
-#purple ul li .item .header {
-  background: linear-gradient(170deg, #b10dc9, #8f0aa2);
-}
-#purple ul li .item .header .toggle {
-  background: linear-gradient(170deg, #8f0aa2, #7e098f);
+#accordion_one ul li .item .header .toggle {
+  background: #333;
 }
 
-#orange ul li .item .header {
-  background: linear-gradient(170deg, #ff851b, #e46a00);
+#accordion_two ul li .item .header {
+  background: #333;
 }
-#orange ul li .item .header .toggle {
-  background: linear-gradient(170deg, #e46a00, #c95d00);
+#accordion_two ul li .item .header .toggle {
+  background: #444;
+}
+
+#accordion_three ul li .item .header {
+  background: #222;
+}
+#accordion_three ul li .item .header .toggle {
+  background: #333;
 }

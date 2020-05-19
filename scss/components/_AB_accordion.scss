@@ -1,6 +1,6 @@
 /**
  * AB_accordion
- * version: 1.0.0
+ * version: 2.0.0
  */
 
 .accordion {
@@ -16,17 +16,14 @@
 			list-style-type: none;
 
 			&:first-child {
-				border-radius: 5px 5px 0 0;
 				overflow: hidden;
 			}
 
 			&:last-child {
-				border-radius: 0 0 5px 5px;
 				overflow: hidden;
 			}
 
 			.item {
-				
 
 				.header {
 					padding: 15px;

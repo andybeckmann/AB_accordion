@@ -1,9 +1,6 @@
 // Global styles
 @use 'global';
 
-// AB_colors
-@use 'components/AB_colors' as colors;
-
 // AB_accordion
 @use 'components/AB_accordion';
 
@@ -15,7 +12,7 @@ main {
 			display: flex;
 		}
 
-		#blue {
+		#accordion_one {
 			margin-bottom: 25px; 
 			
 			@media (min-width: 769px) {
@@ -23,32 +20,32 @@ main {
 			}
 		}
 
-		#purple {
+		#accordion_two {
 			margin-bottom: 25px;
 		}
 	}
 }
 
-#blue ul li .item .header {
-	background: linear-gradient(170deg, colors.$blue, scale-color(colors.$dark-blue, $lightness: -15%));
+#accordion_one ul li .item .header {
+	background: #222;
 
 	.toggle {
-		background: linear-gradient(170deg, scale-color(colors.$dark-blue, $lightness: -15%), scale-color(colors.$dark-blue, $lightness: -25%));;
+		background: #333;;
 	}
 }
 
-#purple ul li .item .header {
-	background: linear-gradient(170deg, colors.$purple, scale-color(colors.$dark-purple, $lightness: -15%));
+#accordion_two ul li .item .header {
+	background: #333;
 
 	.toggle {
-		background: linear-gradient(170deg, scale-color(colors.$dark-purple, $lightness: -15%), scale-color(colors.$dark-purple, $lightness: -25%));
+		background: #444;
 	}
 }
 
-#orange ul li .item .header {
-	background: linear-gradient(170deg, colors.$orange, scale-color(colors.$dark-orange, $lightness: -15%));
+#accordion_three ul li .item .header {
+	background: #222;
 
 	.toggle {
-		background: linear-gradient(170deg, scale-color(colors.$dark-orange, $lightness: -15%), scale-color(colors.$dark-orange, $lightness: -25%));
+		background: #333;
 	}
 }
