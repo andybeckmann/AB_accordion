@@ -90,7 +90,7 @@ main .group #accordion_one {
 }
 @media (min-width: 769px) {
   main .group #accordion_one {
-    margin-right: 25px;
+    margin-right: 2%;
   }
 }
 main .group #accordion_two {
