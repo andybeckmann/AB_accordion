@@ -26,26 +26,10 @@ main {
 	}
 }
 
-#accordion_one ul li .item .header {
-	background: #222;
-
-	.toggle {
-		background: #333;;
-	}
-}
-
-#accordion_two ul li .item .header {
+.accordion ul li .item .header {
 	background: #333;
 
 	.toggle {
-		background: #444;
-	}
-}
-
-#accordion_three ul li .item .header {
-	background: #222;
-
-	.toggle {
-		background: #333;
+		background: #444;;
 	}
 }

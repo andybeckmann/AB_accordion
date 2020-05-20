@@ -70,6 +70,7 @@ body {
 }
 .accordion ul li .item .body .body-text {
   padding: 15px;
+  line-height: 27px;
 }
 .accordion ul li .current-item .header .toggle {
   padding: 11px 16px 15px 18px;
@@ -95,23 +96,9 @@ main .group #accordion_two {
   margin-bottom: 25px;
 }
 
-#accordion_one ul li .item .header {
-  background: #222;
-}
-#accordion_one ul li .item .header .toggle {
+.accordion ul li .item .header {
   background: #333;
 }
-
-#accordion_two ul li .item .header {
-  background: #333;
-}
-#accordion_two ul li .item .header .toggle {
+.accordion ul li .item .header .toggle {
   background: #444;
-}
-
-#accordion_three ul li .item .header {
-  background: #222;
-}
-#accordion_three ul li .item .header .toggle {
-  background: #333;
 }
