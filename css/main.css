@@ -41,6 +41,7 @@ body {
   position: relative;
   font-size: 18px;
   cursor: pointer;
+  border-bottom: 1px solid #222;
 }
 .accordion ul li .item .header .toggle {
   position: absolute;
