@@ -23,7 +23,6 @@ body {
 .accordion ul {
   margin: 0;
   padding: 0;
-  box-shadow: 0 0 15px #ccc;
 }
 .accordion ul li {
   list-style-type: none;
@@ -63,7 +62,7 @@ body {
   content: "+";
 }
 .accordion ul li .item .body {
-  background: #fff;
+  background: #eee;
   font-size: 18px;
   height: 0px;
   overflow: hidden;
